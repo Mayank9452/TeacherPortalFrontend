@@ -21,5 +21,5 @@ To use this project, run the following command:
 
 ## Additional Requirements
 Login with following credentials on Login Page -
-    username : teacher1
+    username : teacher1,
     password : password123
