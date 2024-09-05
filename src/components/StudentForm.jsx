@@ -22,8 +22,10 @@ function StudentForm() {
     try {
       if (selectedStudent) {
         // Update existing student
+        console.log(selectedStudent);
+        
         await axios.put(
-          `http://localhost:5000/api/students/${selectedStudent._id}`,
+          `https://teacherportalbackend.up.railway.app/api/students/${selectedStudent._id}`,
           { name, subject, marks },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
@@ -39,7 +41,7 @@ function StudentForm() {
       } else {
         // Add new student
         const response = await axios.post(
-          'http://localhost:5000/api/students',
+          'https://teacherportalbackend.up.railway.app/api/students',
           { name, subject, marks },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
