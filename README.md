@@ -9,6 +9,13 @@ Teacher Portal
 creating a robust teacher portal with both front-end and back-end components using React.js and Node.js respectively. The portal will
 include a login screen and a home screen for teachers, which will also serve as the student listing screen. Additionally, you will need to implement functionality for managing student listings and adding new students.
 
+## Technical Requirements
+1. Use React.js for building the front-end components.
+2. Implement state management using Redux or Context API for better scalability.
+3. Utilize modern UI libraries like Material-UI or Ant Design for efficient and responsive design.
+4. Ensure proper error handling and data validation on the client-side.
+
+
 ## Installation
 To install, follow these steps:
 
