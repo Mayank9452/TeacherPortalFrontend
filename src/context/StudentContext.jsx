@@ -13,7 +13,7 @@ export const StudentProvider = ({ children }) => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get('https://teacherportalbackend.up.railway.app/api/students', {
+        const response = await axios.get('https://teacherportalbackend-sn24.onrender.com/api/students', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         setStudents(response.data);
@@ -26,7 +26,7 @@ export const StudentProvider = ({ children }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://teacherportalbackend.up.railway.app/api/students/${id}`, {
+      await axios.delete(`https://teacherportalbackend-sn24.onrender.com/api/students/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       setStudents((prevStudents) => prevStudents.filter((student) => student._id !== id));

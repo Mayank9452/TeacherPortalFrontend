@@ -25,7 +25,7 @@ function StudentForm() {
         console.log(selectedStudent);
         
         await axios.put(
-          `https://teacherportalbackend.up.railway.app/api/students/${selectedStudent._id}`,
+          `https://teacherportalbackend-sn24.onrender.com/api/students/${selectedStudent._id}`,
           { name, subject, marks },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
@@ -41,7 +41,7 @@ function StudentForm() {
       } else {
         // Add new student
         const response = await axios.post(
-          'https://teacherportalbackend.up.railway.app/api/students',
+          'https://teacherportalbackend-sn24.onrender.com/api/students',
           { name, subject, marks },
           { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
