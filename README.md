@@ -1,5 +1,5 @@
 ## Live Demo
-Check out the live demo of our project here: [Live Demo](https://teacherportalfrontend.netlify.app/)
+Check out the live demo of our project here: [Live Demo](https://teacherportalapp.netlify.app/)
 
 # Project Title
 Teacher Portal
